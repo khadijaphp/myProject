@@ -21,6 +21,8 @@
 		<link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.min.css">
 		<link rel="stylesheet" href="assets/css/magnific-popup.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		
+
 
 		<!-- Google Map JS-->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOdKtT5fapH3_OfhV3HFeZjqFs4OfNIew"></script>
@@ -30,203 +32,9 @@
 		<div id="preloader-overlayer"></div>
 
 		<!-- Header-->
-		<header class="rn-header">
-
-			<!-- Topbar-->
-			<div class="rn-topbar">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-sm-5 col-lg-3">
-
-							<!-- Tobar Social-->
-							<ul class="rn-social">
-								<li>
-									<a href="fullwidth.html#">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-								<li>
-									<a href="fullwidth.html#">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="fullwidth.html#">
-										<i class="fab fa-google-plus-g"></i>
-									</a>
-								</li>
-								<li>
-									<a href="fullwidth.html#">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</li>
-								<li>
-									<a href="fullwidth.html#">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-							</ul>
-
-						</div>
-						<div class="col-12 col-sm-7 col-lg-9">
-
-							<!-- Topbar Contact with Icon-->
-							<div class="rn-icon-contents">
-								<div class="rn-phone rn-icon-content">
-									<div class="rn-icon">
-										<i class="lnr lnr-phone"></i>
-									</div>
-									<div class="rn-info">
-										<ul>
-											<li>(954)-944-1250</li>
-											
-										</ul>
-									</div>
-								</div>
-								<div class="rn-email rn-icon-content">
-									<div class="rn-icon">
-										<i class="lnr lnr-envelope"></i>
-									</div>
-									<div class="rn-info">
-										<ul>
-											<li>RentNow@gmail.com</li>
-											
-										</ul>
-									</div>
-								</div>
-								<div class="rn-address rn-icon-content">
-									<div class="rn-icon">
-										<i class="lnr lnr-map-marker"></i>
-									</div>
-									<div class="rn-info">
-										<ul>
-											<li>Blvd Mohammed 6 121 Cité Riad Salam</li>
-											<li>Mohammedia, Maroc</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Topbar-->
-
-
-			<!-- Menubar-->
-			<div class="rn-menubar">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-4">
-							<!-- Logo-->
-							<a class="brand-name" href="index.html">
-								<img class="img-fluid" src="assets/images/logo.svg" alt="Logo">
-							</a>
-						</div>
-						<div class="col-8">
-							<nav class="rn-navbar-container">
-
-								<!-- Navbar Toggle Button for Only Tablet and Phone-->
-								<button class="rn-navbar-toggler" id="rn-navbar-toggler">
-									<span class="rn-navbar-toggler-bar"></span>
-									<span class="rn-navbar-toggler-bar"></span>
-									<span class="rn-navbar-toggler-bar"></span>
-								</button>
-
-								<!-- Main Nav Menu-->
-								<ul class="rn-navbar">
-									<li>
-										<a href="index.html">Accueil</a>
-									</li>
-									<li>
-										<a href="fullwidth.html#">Voitures 
-											<i class="lnr lnr-chevron-down"></i>
-										</a>
-										<ul>
-											<li>
-												<a href="cars.html">Liste Des Voitures</a>
-											</li>
-											<li>
-												<a href="car-search.html">Recherche Voiture</a>
-											</li>
-											<li>
-												<a href="fullwidth.html#">Gallerie 
-													<i class="lnr lnr-chevron-right"></i>
-												</a>
-												<ul>
-													<li>
-														<a href="gallery-col-2.html">2 Colonne</a>
-													</li>
-													<li>
-														<a href="gallery-col-3.html">3 Colonne</a>
-													</li>
-													<li>
-														<a href="gallery-col-4.html">4 Colonne</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="car-single.html">Voiture Singulière</a>
-											</li>
-											<li>
-												<a href="checkout.html">La Caisse</a>
-											</li>
-											<li>
-												<a href="cart.html">Panier</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="fullwidth.html#">Aide &amp; Info 
-											<i class="lnr lnr-chevron-down"></i>
-										</a>
-										<ul>
-											<li>
-												<a href="service.html">Service Client</a>
-											</li>
-											<li>
-												<a href="contact.html">Contactez-Nous</a>
-											</li>
-											<li>
-												<a href="about.html">A Propos</a>
-											</li>
-										
-										</ul>
-									</li>
-									<li class="active">
-										<a href="fullwidth.html">Condition &amp; Termes</a>
-									</li>
-									<li>
-										<a href="fullwidth.html#">Blog 
-											<i class="lnr lnr-chevron-down"></i>
-										</a>
-										<ul>
-											<li>
-												<a href="blog.html">Liste De Blog</a>
-											</li>
-											<li>
-												<a href="blog-grid.html">Grille De Blog</a>
-											</li>
-											<li>
-												<a href="blog-grid-sidebar.html">Grille De Blog - Barre Latérale</a>
-											</li>
-											<li>
-												<a href="blog-single.html">Article Singulier</a>
-											</li>
-										</ul>
-									</li>
-									
-								</ul>
-
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Menubar-->
-
-		</header>
+		<?php
+		include 'header.php';
+		?>
 		<!-- End Header-->
 
 		<!-- Page Title-->
@@ -236,8 +44,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="rn-page-title-inner">
-							<h1>Pleine Largeur</h1>
-							<p>Cras eros lorem, rhoncus ac risus sit amet, fringilla ultrices purus.</p>
+						
 						</div>
 					</div>
 				</div>
@@ -246,185 +53,23 @@
 		<!-- End Page Title-->
 
 		<!-- Page Content-->
-		<div class="rn-section">
+		<div  class="rn-section">
 			<div class="container pb-15">
 				<div class="row">
 					<div class="col-lg-12">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies erat non augue pretium mollis. Nunc ut mauris volutpat, imperdiet nunc et, mattis erat. Sed id pretium est. Suspendisse magna diam, ultrices ac arcu ut, aliquam tincidunt est. In nisl nulla, dapibus id ante eget, interdum ultricies magna. Maecenas lectus urna, pulvinar consequat lobortis sed, sodales a libero. Pellentesque ac magna tellus. Phasellus nisl lorem, convallis vel cursus porttitor, ullamcorper nec dui.</p>
-						<p>Aenean at nibh massa. Mauris magna sapien, sollicitudin eget finibus eu, aliquet at lectus. Cras cursus eget libero id blandit. Fusce quis ligula id tellus euismod posuere. Nunc nunc ex, ultrices ac pellentesque eu, ultricies nec justo. Aenean dolor neque, tristique in lectus at, ornare bibendum ligula. Curabitur scelerisque, ligula sit amet aliquet finibus, diam erat pharetra dolor, ac vulputate nunc ex vel ante. Etiam nec efficitur sem. Suspendisse nisl velit, rutrum nec magna at, cursus egestas nunc. Maecenas laoreet quam sit amet erat pretium, vel lobortis nunc fermentum. Cras ullamcorper mi nec vehicula sagittis. Mauris ut neque orci. Nunc non ornare neque, vel vestibulum libero.</p>
-						<p>Duis gravida ante sed mi mattis hendrerit. Nullam efficitur ligula eget feugiat vehicula. Aliquam quis dui scelerisque, tempus velit posuere, sodales justo. Cras in faucibus ante. Suspendisse eget viverra nunc. Nam luctus risus diam, efficitur bibendum mauris feugiat a. Sed efficitur sit amet sapien quis porta. Cras nec nisl erat. Integer rutrum augue non pharetra placerat. Duis quis condimentum velit. Morbi placerat nec ipsum eget aliquam.</p>
-						<p>Curabitur hendrerit gravida risus, consectetur sollicitudin mauris. Praesent fringilla consequat velit, at eleifend lectus tempor at. Donec auctor pretium tempus. Donec sit amet est nec nulla sagittis malesuada. Aenean ac felis urna. Aliquam ipsum ligula, rutrum id consectetur eu, dapibus sit amet quam. Donec varius malesuada turpis. Phasellus volutpat non dolor vel lacinia. Pellentesque ultrices ut libero vel pellentesque. Curabitur in quam porta, elementum lorem nec, euismod arcu. Mauris laoreet ipsum eros, id ornare nibh varius et. Duis bibendum a purus a euismod. Sed a pretium sem, nec sollicitudin urna.</p>
-						<p>Nulla lacinia turpis non justo congue, eu tincidunt dolor pulvinar. Duis laoreet sed sem quis eleifend. Phasellus sed cursus tortor. Morbi rhoncus mi non vulputate imperdiet. Aenean sem mi, rhoncus vel rhoncus ut, sollicitudin convallis enim. Nunc malesuada pretium felis vel scelerisque. Sed vulputate, augue dictum venenatis sagittis, urna leo condimentum orci, id pellentesque ipsum tortor at dolor. Integer lobortis nulla ullamcorper commodo ullamcorper. Aliquam erat volutpat. Mauris vehicula nibh vel mauris efficitur, eu sollicitudin felis ornare. Sed nec laoreet est. Vivamus fringilla quam ex, id ultricies risus tincidunt et. In tincidunt felis tortor, et sodales magna accumsan et. Proin sit amet erat ut magna tempor posuere. Nunc eleifend dictum nisl, non condimentum purus pellentesque quis. Praesent pharetra volutpat leo, eget accumsan nisl porttitor eu.</p>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+		 ipsum accusantium enim itaque vel sit odit quisquam fugiat pariatur exercitationem.</p>
 					</div>
 				</div>
 			</div>
+			
 		</div>
 		<!-- End Page Content-->
 
 		<!-- Site Footer-->
-		<footer class="rn-footer">
-
-			<!-- Footer Widgets-->
-			<div class="rn-footer-widgets">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-
-							<!-- Widget Item-->
-							<section class="rn-widget">
-								<h2 class="rn-widget-title">A Propos</h2>
-								<div class="rn-widget-content">
-									<a class="brand-name" href="index.html">
-										<img src="assets/images/logo.svg" alt="Logo">
-									</a>
-									<p>Sed sit amet ligula ac nulla finibus euismod nec nec diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper, risus eget ornare maximus, ipsum ante semper.</p>
-									<ul class="rn-widget-social">
-										<li>
-											<a href="fullwidth.html#">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-										</li>
-										<li>
-											<a href="fullwidth.html#">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="fullwidth.html#">
-												<i class="fab fa-instagram"></i>
-											</a>
-										</li>
-										<li>
-											<a href="fullwidth.html#">
-												<i class="fab fa-linkedin-in"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</section>
-							<!-- End Widget Item-->
-
-						</div>
-						<div class="col-md-5">
-
-							<!-- Widget Item-->
-							<section class="rn-widget">
-								<h2 class="rn-widget-title">Liens Rapids</h2>
-								<div class="rn-widget-content">
-									<div class="row rn-quick-links">
-										<div class="col-6">
-											<ul>
-												<li>
-													<a href="fullwidth.html#">A Propos</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Contactez-Nous</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Support</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Voir Réservation</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#"> Programmes d'affiliation</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Marketplace</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-6">
-											<ul>
-												<li>
-													<a href="fullwidth.html#">Plan Du Site</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Carrières</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Presse</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Obtenu Un Reçu</a>
-												</li>
-												<li>
-													<a href="fullwidth.html#">Communauté</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</section>
-							<!-- End Widget Item-->
-
-						</div>
-						<div class="col-md-3">
-
-							<!-- Widget Item-->
-							<section class="rn-widget">
-								<h2 class="rn-widget-title">Contactez-Nous</h2>
-								<div class="rn-widget-content">
-									<div class="rn-icon-contents">
-										<div class="rn-phone rn-icon-content">
-											<div class="rn-icon">
-												<i class="lnr lnr-phone"></i>
-											</div>
-											<div class="rn-info">
-												<ul>
-													<li>(954)-944-1250</li>
-													
-												</ul>
-											</div>
-										</div>
-										<div class="rn-email rn-icon-content">
-											<div class="rn-icon">
-												<i class="lnr lnr-envelope"></i>
-											</div>
-											<div class="rn-info">
-												<ul>
-													<li>RentNow@mail.com</li>
-													
-												</ul>
-											</div>
-										</div>
-										<div class="rn-address rn-icon-content">
-											<div class="rn-icon">
-												<i class="lnr lnr-map-marker"></i>
-											</div>
-											<div class="rn-info">
-												<ul>
-													<li>Blvd Mohammed 6 121 Cité Riad Salam</li>
-													<li>Mohammedia, Maroc</li>
-													
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<!-- End Widget Item-->
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Footer Widgets-->
-
-			<!-- Footer Copyright-->
-			<div class="rn-footer-copyright">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-md-6">
-							<p>Copyright &copy; RentNow 2018. Tous les droits sont réservés.</p>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<!-- End Footer Copyright-->
-
-		</footer>
+		<?php
+		include 'footer.php';
+		?>
 		<!-- End Site Footer-->
 
 		<!--

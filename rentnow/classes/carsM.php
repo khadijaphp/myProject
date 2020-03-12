@@ -18,4 +18,14 @@ class CarsM extends Dbh
 
       
     }
+    protected function getSingleCar($id)
+    {
+        $sql = "SELECT * FROM voiture WHERE id_voiture=?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+
+        $result = $stmt->fetchAll();
+        return $result;
+    }
+
 }

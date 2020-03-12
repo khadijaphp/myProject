@@ -1,3 +1,10 @@
+<?php 
+session_start();
+error_reporting("E-NOTICE");
+
+			
+			
+?>
 <header class="rn-header">
 
 			<!-- Topbar-->
@@ -80,14 +87,17 @@
 				</div>
 			</div>
 			<!-- End Topbar-->
-            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-            <a class="btn btn-main btn-lg rn-fade-bottom rn-caption-item-3" href="logIn.php#">Log In</a>
-            <a class="btn btn-main btn-lg rn-fade-bottom rn-caption-item-3" href="logIn.php#">Log Out</a>
-            <a class="btn btn-main btn-lg rn-fade-bottom rn-caption-item-3" href="logIn.php#">Profil</a>
+				<?php 
+				if((!$_SESSION['cin']) && (!$_SESSION['password']))
+				{
 
-            </div>
-        </nav>
+				
+				?>
+            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+              <div class="container">
+                  <h1>Bienvenu </h1>
+              </div>
+            </nav>
 
 			<!-- Menubar-->
 			<div class="rn-menubar">
@@ -125,25 +135,8 @@
 											<li>
 												<a href="car-search.php">Recherche Voiture</a>
 											</li>
-											<li>
-												<a href="index.php#">Gallerie 
-													<i class="lnr lnr-chevron-right"></i>
-												</a>
-												<ul>
-													<li>
-														<a href="gallery-col-2.php">2 Colonne</a>
-													</li>
-													<li>
-														<a href="gallery-col-3.php">3 Colonne</a>
-													</li>
-													<li>
-														<a href="gallery-col-4.php">4 Colonne</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="car-single.php">Voiture Singulière</a>
-											</li>
+											
+											
 											<li>
 												<a href="checkout.php">La Caisse</a>
 											</li>
@@ -166,12 +159,13 @@
 											<li>
 												<a href="about.php">A Propos</a>
 											</li>
+											<li>
+										        <a href="fullwidth.php">Conditions &amp; Termes </a>
+									        </li>
 											
 										</ul>
 									</li>
-									<li>
-										<a href="fullwidth.php">Conditions &amp; Termes </a>
-									</li>
+									
 									<li>
 										<a href="index.php#">Blog 
 											<i class="lnr lnr-chevron-down"></i>
@@ -180,18 +174,111 @@
 											<li>
 												<a href="blog.php">Liste Blog</a>
 											</li>
-											<li>
-												<a href="blog-grid.php">Grille De Blog</a>
-											</li>
-											<li>
-												<a href="blog-grid-sidebar.php">Grille De Blog - Barre Latérale</a>
-											</li>
+											
 											<li>
 												<a href="blog-single.php">Article Singulier</a>
 											</li>
 										</ul>
 									</li>
+									<li>
+										        <a href="logIn.php">LogIn Client </a>
+									</li>
+									<li>
+										        <a href="signUp.php">Inscription Client </a>
+									</li>
+								  <?php }else{ ?>
 									
+									<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+              <div class="container">
+                  <h1>welcome <?php echo $_SESSION['cin'];?> </h1>
+              </div>
+            </nav>
+
+			<!-- Menubar-->
+			<div class="rn-menubar">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<!-- Logo-->
+							<a class="brand-name" href="index.php">
+								<img class="img-fluid" src="assets/images/logo.svg" alt="Logo">
+							</a>
+						</div>
+						<div class="col-8">
+							<nav class="rn-navbar-container">
+
+								<!-- Navbar Toggle Button for Only Tablet and Phone-->
+								<button class="rn-navbar-toggler" id="rn-navbar-toggler">
+									<span class="rn-navbar-toggler-bar"></span>
+									<span class="rn-navbar-toggler-bar"></span>
+									<span class="rn-navbar-toggler-bar"></span>
+								</button>
+
+								<!-- Main Nav Menu-->
+								<ul class="rn-navbar">
+									<li class="active">
+										<a href="index.php">Accueil</a>
+									</li>
+									<li>
+										<a href="index.php#">Voitures 
+											<i class="lnr lnr-chevron-down"></i>
+										</a>
+										<ul>
+											<li>
+												<a href="cars.php">Liste des Voitures</a>
+											</li>
+											<li>
+												<a href="car-search.php">Recherche Voiture</a>
+											</li>
+											
+											
+											<li>
+												<a href="checkout.php">La Caisse</a>
+											</li>
+											<li>
+												<a href="cart.php">Panier</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="index.php#">Aide &amp; Info 
+											<i class="lnr lnr-chevron-down"></i>
+										</a>
+										<ul>
+											<li>
+												<a href="service.php">Service Client</a>
+											</li>
+											<li>
+												<a href="contact.php">Contactez-Nous</a>
+											</li>
+											<li>
+												<a href="about.php">A Propos</a>
+											</li>
+											<li>
+										        <a href="fullwidth.php">Conditions &amp; Termes </a>
+									        </li>
+											
+										</ul>
+									</li>
+									
+									<li>
+										<a href="index.php#">Blog 
+											<i class="lnr lnr-chevron-down"></i>
+										</a>
+										<ul>
+											<li>
+												<a href="blog.php">Liste Blog</a>
+											</li>
+											
+											<li>
+												<a href="blog-single.php">Article Singulier</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+									 <a href="logOut.php" name="logOut">Log Out</a>
+									</li>
+								  <?php } ?>
 								</ul>
 
 							</nav>
@@ -200,5 +287,6 @@
 				</div>
 			</div>
 			<!-- End Menubar-->
+			
 
 		</header>

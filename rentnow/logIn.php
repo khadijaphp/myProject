@@ -1,26 +1,29 @@
 <?php
-session_start();
+
 include 'autoLoad.php';
 if(isset($_POST["login"]))
 {
-    if(empty($_POST["username"])|| empty($_POST["password"]))
+    if(empty($_POST["cin"])|| empty($_POST["password"]))
     {
         echo'<label> les champs sont obligatoire</label>';
     }
     else
     {
-        $user=$_POST["username"];
+        $user=$_POST["cin"];
         $pwd=$_POST["password"];
 
            $con = new dbh();
-           $sql="SELECT * FROM users WHERE username=? AND password=?";
+           $sql="SELECT * FROM client WHERE cin=? AND password=?";
 
            $stmt=$con->connect()->prepare($sql);
            $stmt->execute([$user,$pwd]);
            $count=$stmt->rowCount();
            if($count>0)
            {
-               $_SESSION["username"]=$_POST["username"];
+			   
+			   session_start();
+			   $_SESSION['cin']=$user;
+			   $_SESSION['password']=$pwd;
                header("location:cars.php");
            }
         
@@ -96,12 +99,20 @@ if(isset($_POST["login"]))
 			<div class="container">
             
         <form action="" method="post">
-            <label for="">username: </label>
-            <input type="text" name="username">
-            <br> <br>
-            <label>PassWord: </label>
-            <input type="password" name="password">
-            <br><br>
+           
+			<div class="col-md-6">
+				<div class="rn-input-group">
+					<label>CIN</label>
+					<input type="text" name="cin">
+				</div>
+			</div>
+			<br>
+			<div class="col-md-6">
+				<div class="rn-input-group">
+					<label>Password</label>
+					<input type="password" name="password">
+				</div>
+			</div>
             <input type="submit" name="login" value="login" class="btn_Log">
         </form>
     

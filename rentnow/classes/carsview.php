@@ -9,5 +9,12 @@ class CarsView extends CarsM
 
       
     }
+    public function showSingleCar($id)
+    {
+       return $result=$this->getSingleCar($id);
+
+      
+    }
+
 }
 ?>

@@ -25,9 +25,11 @@ if(isset($_POST["login"]))
 			   $_SESSION['cin']=$user;
 			   $_SESSION['password']=$pwd;
                header("location:cars.php");
-           }
+           }else{
+			echo"password incorrect";
+		   }
         
-           echo"testing";
+           
     }
 
 

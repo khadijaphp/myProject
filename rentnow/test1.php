@@ -1,6 +1,6 @@
 <?php 
 session_start();
-echo $_SESSION['user'];
+echo 'vous etes connecte';
 ?>
 <h1><a href="test1.php">test1</a></h1>
 

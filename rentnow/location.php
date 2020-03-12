@@ -38,13 +38,7 @@ include 'autoLoad.php';
         include 'header.php';
        
 		?>
-		<?php
-
-        if((!$_SESSION['cin']) && (!$_SESSION['password']))
-          {
-	          header("location:car-single.php");
-          }
-?>
+		
         
 		<!-- End Header-->
 

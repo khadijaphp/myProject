@@ -1,8 +1,30 @@
 <?php
 session_start();
-$_SESSION['user']="khadija";
-echo $_SESSION['user'];
+$_SESSION['cin']="khadija";
+$_SESSION['password']="khadijapass";
+echo $_SESSION['cin'];
+session_destroy();
 ?>
-<h1><a href="test1.php">test1</a></h1>
+<form action="test1.php" method="post">
+						 <input type="submit" name="louer" value="valider">
+						 </form>
+<?php
+if(isset($_POST["valider"]))
+{
+   echo 'valider khadama';
 
-<h1><a href="test.php">home</a></h1>
+     if((!$_SESSION['cin']) && (!$_SESSION['password']))
+       {
+      // header("location:car-single.php");
+      echo 'vous etes deconnectes';
+      
+     }else
+     {
+      header("location:test1.php");
+      echo 'connecter';
+     }
+     
+        
+     
+   }
+?>

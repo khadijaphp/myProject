@@ -2,9 +2,7 @@
  include 'autoLoad.php';
  
 ?>
-<?php
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -41,6 +39,23 @@
 		include 'header.php';
 		
 		?>
+		<?php
+	if(isset($_POST["valider"]))
+	{
+		echo 'valider khadama';
+	
+        if((!$_SESSION['cin']) && (!$_SESSION['password']))
+          {
+			// header("location:car-single.php");
+			echo 'non con';
+			
+		  }
+		  
+			  header("location:location.php");
+			  echo 'connecter';
+		  
+		}
+?>
 		<!-- End Header-->
 
 		<?php
@@ -104,14 +119,16 @@
 							 elementum posuere. Donec libero nisi, blandit non turpis sed, hendrerit suscipit metus. Aliquam ornare tincidunt
 							 ctum. Sed laoreet, arcu fringilla fermentum rutrum, quam urna dictum tellus, et rutrum dui lectus ac turpis. 
 							 Donec eu sem in libero euismod tristique vel sit amet nibh.</p>
-						<a class="btn btn-main btn-lg btn-shadow btn-block" name="louer" href="location.php?idv=<?php echo $car['id_voiture'] ?>">
+						<!-- <a class="btn btn-main btn-lg btn-shadow btn-block" name="louer" href="location.php?idv=<?php echo $car['id_voiture'] ?>">
 									<i class="fas fa-search"></i> Louer
-						 </a>
+						 </a> -->
+						 
+						 
 						
 					</div>
 					
 					<?php 
-					if($car['dispo']=='disponible')
+					if($car['dispo']=="Disponible")
 					{
 					?>
 					<div class="col-lg-4">
@@ -122,7 +139,7 @@
 							<div class="rn-small-search-form-title">
 								<h2>details de Location</h2>
 							</div>
-							<form action="car-single.html">
+							<form action="" method="post">
 								<div class="rn-icon-input">
 									<i class="fas fa-map-marker-alt"></i>
 									<input type="text" placeholder="Lieu De Location">
@@ -163,9 +180,9 @@
 										</div>
 									</div>
 								</div>
-								<button class="btn btn-main btn-lg btn-shadow btn-block" type="submit">
+								<input class="btn btn-main btn-lg btn-shadow btn-block" type="submit" name="valider">
 									<i class="fas fa-search"></i> Valider
-								</button>
+					            </input>
 							</form>
 						</div>
 						
@@ -207,7 +224,7 @@
 
 						<div class="rn-small-search-form">
 							<div class="rn-small-search-form-title">
-								<h2>Voir Les Disponibilités</h2>
+								<h2> Voir les disponibilités</h2>
 							</div>
 							<form action="car-single.html">
 								<div class="rn-icon-input">
@@ -251,7 +268,7 @@
 									</div>
 								</div>
 								<button class="btn btn-main btn-lg btn-shadow btn-block" type="submit">
-									<i class="fas fa-search"></i> Vérifier Maintenant
+									<i class="fas fa-search"></i> valider
 								</button>
 							</form>
 						</div>
@@ -355,5 +372,6 @@
 		<script src="assets/js/starrr.min.js"></script>
 		<script src="assets/js/jquery.magnific-popup.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
+		
 	</body>
 </html>
